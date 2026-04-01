@@ -1,0 +1,47 @@
+{
+  "models": [
+    {
+      "name": "minimax",
+      "type": "minimax",
+      "api_key": "MINIMAX_API_KEY",
+      "base_url": "https://api.minimaxi.com/v1",
+      "model": "MiniMax-M2.7"
+    },
+    {
+      "name": "claude",
+      "type": "anthropic",
+      "api_key": "ANTHROPIC_API_KEY",
+      "base_url": "https://api.anthropic.com",
+      "model": "claude-sonnet-4-20250514"
+    },
+    {
+      "name": "gemini",
+      "type": "gemini",
+      "api_key": "GEMINI_API_KEY",
+      "base_url": "https://generativelanguage.googleapis.com",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "name": "openai",
+      "type": "openai",
+      "api_key": "OPENAI_API_KEY",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-4o-mini"
+    },
+    {
+      "name": "kimi",
+      "type": "kimi",
+      "api_key": "KIMI_API_KEY",
+      "base_url": "https://api.moonshot.cn/v1",
+      "model": "kimi-k2.5"
+    },
+    {
+      "name": "glm",
+      "type": "glm",
+      "api_key": "GLM_API_KEY",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-5"
+    }
+  ],
+  "default": "minimax"
+}
