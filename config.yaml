@@ -1,0 +1,14 @@
+server:
+  addr: ":8323"
+
+log:
+  level: debug      # debug | info | warn | error
+  format: text     # json（生产/聚合系统）| text（本地开发）
+
+agent:
+  system_prompt_file: "config/system-prompt.txt"  # 从文件加载 system prompt（支持长提示词）
+  skills_dir: "skills"                       # 技能自动发现目录
+  max_messages: 50                           # 对话历史最大保留条数
+  memory_path: ".plusoneclaw/memory.json"    # 持久化记忆文件路径
+  max_iterations: 15                         # Agent Loop 最大迭代次数
+
