@@ -129,7 +129,7 @@ func main() {
 	if len(os.Args) > 1 && os.Args[1] == "repl" {
 		replAddr := cfg.Server.Addr // 使用配置文件中的服务器地址
 		if replAddr == "" {
-			replAddr = ":8080" // 默认端口
+			replAddr = ":8323" // 默认端口
 		}
 		runREPLClient("http://localhost" + replAddr) // 连接到本地服务器
 		return
@@ -202,7 +202,7 @@ func main() {
 	// --- 启动 Web 服务器（始终常驻）---
 	webAddr := cfg.Server.Addr
 	if webAddr == "" {
-		webAddr = ":8080"
+		webAddr = ":8323"
 	}
 	webModels := make([]web.ModelEntry, len(modelsCfg.Models))
 	for i, m := range modelsCfg.Models {

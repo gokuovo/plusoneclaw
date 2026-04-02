@@ -66,7 +66,7 @@ PlusOneClaw 不追求功能大而全，只做一件事：**提供一套清晰、
                           │
               ┌───────────┴───────────┐
               │       Web Server      │
-              │  /api/chat   :8080    │
+              │  /api/chat   :8323    │
               │  /api/models          │
               └───────────────────────┘
 ```
@@ -90,7 +90,7 @@ PlusOneClaw 不追求功能大而全，只做一件事：**提供一套清晰、
 # 编译
 go build -o plusoneclaw
 
-# 守护模式：Web 服务器常驻 http://localhost:8080
+# 守护模式：Web 服务器常驻 http://localhost:8323
 ./plusoneclaw
 
 # REPL 模式：连接到已运行的服务器的交互式命令行
@@ -103,7 +103,7 @@ go build -o plusoneclaw
 
 ```yaml
 server:
-  addr: ":8080"
+  addr: ":8323"
 
 log:
   level: debug      # debug | info | warn | error

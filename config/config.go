@@ -18,7 +18,7 @@ type Config struct {
 
 // ServerConfig 控制 HTTP 服务器行为。
 type ServerConfig struct {
-	// Addr 是监听地址，如 ":8080"。
+	// Addr 是监听地址，如 ":8323"。
 	// 环境变量 SERVER_ADDR 可覆盖。
 	Addr string `yaml:"addr"`
 }
